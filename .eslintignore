@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+build/
+dist/
+es/
+lib/
+docs-dist/
+.umi*/

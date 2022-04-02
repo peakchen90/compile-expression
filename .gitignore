@@ -1,0 +1,33 @@
+.DS_Store
+node_modules/
+coverage/
+
+# compile files
+build/
+dist/
+es/
+lib/
+docs-dist/
+.umi*/
+.package/
+
+# local env files
+.env.local
+.env.*.local
+.temp/
+temp/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
