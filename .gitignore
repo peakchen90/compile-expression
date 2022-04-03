@@ -2,20 +2,13 @@
 node_modules/
 coverage/
 
-# compile files
-build/
-dist/
-es/
-lib/
-docs-dist/
-.umi*/
-.package/
-
 # local env files
 .env.local
 .env.*.local
 .temp/
 temp/
+
+yarn.lock
 
 # Log files
 npm-debug.log*
