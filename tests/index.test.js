@@ -4,6 +4,7 @@ const React = require('react');
 describe('Compile Expression', () => {
   test('normal', () => {
     expect(compileExpression('1 + 2')).toBe(3);
+    expect(compileExpression('1 + a', { a: 3 })).toBe(4);
   });
 
   test('jsx element', () => {

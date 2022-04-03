@@ -11,6 +11,9 @@
     "test": "jest",
     "prepublishOnly": "npm run test"
   },
+  "engines": {
+    "node": ">= 10.8.0"
+  },
   "repository": "git@github.com:peakchen90/compile-expression.git",
   "author": "peakchen90 <1558267774@qq.com>",
   "license": "MIT",
