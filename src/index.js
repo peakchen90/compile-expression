@@ -1,3 +1,4 @@
+const { runInNewContext } = require('vm');
 const { transform } = require('./transform');
 
 function compileExpression(expression, scope) {
@@ -5,9 +6,7 @@ function compileExpression(expression, scope) {
     return null;
   }
   const code = transform(expression);
-  return new Function('__scope__', `with(__scope__ || {}) { return ${code} }`)(
-    scope
-  );
+  return runInNewContext(code, scope || {});
 }
 
 module.exports = {
